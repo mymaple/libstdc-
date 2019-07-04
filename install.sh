@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd `dirname $0`
+
 # Asking sudo
 if [ $EUID != 0 ]; then
     sudo "$0" "$@"
